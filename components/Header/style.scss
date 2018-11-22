@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    &__item {
+      margin: 15px;
+    }
+  }
+}
