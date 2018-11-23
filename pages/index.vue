@@ -2,10 +2,10 @@
   <article>
     <Header/>
     <section class="home">
-      <!-- <marquee 
+      <marquee 
         behavior="scroll" 
         direction="left"
-        class="home__title">ホームページ</marquee> -->
+        class="home__title">しゅけピーのホームページ</marquee>
     </section>
   </article>
 </template>
