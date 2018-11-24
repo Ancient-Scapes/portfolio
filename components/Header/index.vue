@@ -9,6 +9,13 @@
           :text="value.name"
           :link="value.link"/>
       </li>
+      <li class="header__list__item">
+        <vs-button
+          icon="star"
+          @click="$store.commit('changeMode')">
+          モード変更
+        </vs-button>
+      </li>
     </ul>
   </section>
 </template>
