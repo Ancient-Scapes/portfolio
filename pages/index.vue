@@ -2,10 +2,25 @@
   <article>
     <Header/>
     <section class="home">
-      <marquee 
-        behavior="scroll" 
-        direction="left"
-        class="home__title">しゅけピーのホームページ</marquee>
+      <div
+        v-if="$store.getters.isOld" 
+        class="home--title__wrapper__old">
+        <marquee 
+          behavior="scroll" 
+          direction="left"
+          class="home--title__text">しゅけピーのホームページ</marquee>
+      </div>
+      <div 
+        v-else-if="$store.getters.isFuture"
+        class="home--title__wrapper__future">
+        <h1 class="home--title__text">
+          しゅけピーのホームページ
+        </h1>
+
+        <span class="home--title__description">
+          ああ
+        </span>
+      </div>
     </section>
   </article>
 </template>

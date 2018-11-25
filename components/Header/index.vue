@@ -1,6 +1,8 @@
 <template>
   <section class="header">
-    <ul class="header__list">
+    <ul
+      v-if="$store.getters.isOld"
+      class="header__list header__list__old">
       <li
         v-for="(value, index) in links"
         :key="index" 
@@ -9,14 +11,26 @@
           :text="value.name"
           :link="value.link"/>
       </li>
-      <li class="header__list__item">
-        <vs-button
-          icon="star"
-          @click="$store.commit('changeMode')">
-          モード変更
-        </vs-button>
+    </ul>
+    <ul
+      v-else-if="$store.getters.isFuture"
+      class="header__list header__list__future">
+      <li
+        v-for="(value, index) in links"
+        :key="index" 
+        class="header__list__item">
+        <vs-button>{{ value.name }}</vs-button>
       </li>
     </ul>
+
+    <div class="header__mode">
+      <vs-chip>
+        <vs-avatar
+          icon="thumb_up"
+          @click="$store.commit('changeMode')"/>
+        {{ $store.getters.getMode }}
+      </vs-chip>
+    </div>
   </section>
 </template>
 
