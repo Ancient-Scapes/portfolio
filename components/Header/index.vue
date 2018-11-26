@@ -6,7 +6,7 @@
       <li
         v-for="(value, index) in links"
         :key="index" 
-        class="header__list__item">
+        class="header__list__item header__list__item__old">
         <MenuButton 
           :text="value.name"
           :link="value.link"/>
@@ -18,8 +18,12 @@
       <li
         v-for="(value, index) in links"
         :key="index" 
-        class="header__list__item">
-        <vs-button>{{ value.name }}</vs-button>
+        class="header__list__item header__list__item__future">
+        <vs-button>
+          <nuxt-link :to="value.link">
+            {{ value.name }}
+          </nuxt-link>
+        </vs-button>
       </li>
     </ul>
 
@@ -51,10 +55,6 @@ export default {
         {
           name: 'プロフィール',
           link: '/profile'
-        },
-        {
-          name: 'スキル',
-          link: '/skill'
         },
         {
           name: '経歴',

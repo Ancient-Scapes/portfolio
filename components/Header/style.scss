@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 700px;
   
   &__list {
     display: flex;
@@ -11,6 +10,12 @@
 
     &__item {
       margin: 15px;
+
+      &__future {
+        a {
+          color: white;
+        }
+      }
     }
   }
 
