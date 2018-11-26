@@ -1,34 +1,45 @@
 export default {
-  language: ['JavaScript', 'Node.js', 'PHP', 'C Sharp', 'Elixir'],
-  framework: {
-    javaScript: ['Vue.js', 'Nuxt.js', 'React.js', 'AngularJS', 'jQuery'],
-    nodeJs: ['express'],
-    php: ['FuelPHP', 'Laravel'],
-    elixir: ['Phoenix']
+  language: {
+    javaScript: {
+      name: 'JavaScript',
+      framework: ['Vue.js', 'Nuxt.js', 'React.js', 'AngularJS', 'jQuery']
+    },
+    nodeJs: {
+      name: 'Node.js'
+    },
+    php: {
+      name: 'PHP',
+      framework: ['FuelPHP', 'Laravel']
+    },
+    cSharp: {
+      name: 'C Sharp',
+      framework: ['dotNET', 'Unity']
+    },
+    elixir: {
+      name: 'Elixir',
+      framework: ['Phoenix']
+    }
   },
   javaScriptTools: {
     language: ['ES6', 'CSS', 'Sass'],
     build: ['webpack', 'gulp', 'parcel', 'npm scripts'],
     test: ['Jest', 'AVA'],
-    performance: ['ESLint', 'Prettier']
+    formatter: ['ESLint', 'Prettier']
   },
   design: {
-    language: ['CSS', 'SASS/SCSS'],
-    developmentMethods: ['flexbox', 'BEM'],
     tools: ['figma', 'Zeplin']
   },
-  db: ['MySQL', 'OracleDB', 'Redis', 'SQL Server'],
+  db: ['MySQL', 'OracleDB', 'redis', 'SQL Server'],
   os: ['Linux', 'Mac OSX', 'Windows'],
-  tool: [
+  other: [
     'Unity',
-    'Git',
+    'git',
     'Github',
     'GitLab',
     'Redmine',
-    'AWS EC2v',
+    'AWS EC2',
     'Firebase',
     'Netlify',
-    'Docker'
-  ],
-  developmentMethods: ['ウォーターフォール', 'Git Flow', 'Github Flow']
+    'docker'
+  ]
 }
