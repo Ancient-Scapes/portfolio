@@ -1,5 +1,5 @@
 export default {
-  language: ['JavaScript', 'Node.js', 'PHP', 'C#', 'Elixir'],
+  language: ['JavaScript', 'Node.js', 'PHP', 'C Sharp', 'Elixir'],
   framework: {
     javaScript: ['Vue.js', 'Nuxt.js', 'React.js', 'AngularJS', 'jQuery'],
     nodeJs: ['express'],
@@ -7,7 +7,7 @@ export default {
     elixir: ['Phoenix']
   },
   javaScriptTools: {
-    language: ['ES6', 'CSS/SASS'],
+    language: ['ES6', 'CSS', 'Sass'],
     build: ['webpack', 'gulp', 'parcel', 'npm scripts'],
     test: ['Jest', 'AVA'],
     performance: ['ESLint', 'Prettier']
@@ -19,7 +19,7 @@ export default {
   },
   db: ['MySQL', 'OracleDB', 'Redis', 'SQL Server'],
   os: ['Linux', 'Mac OSX', 'Windows'],
-  tools: [
+  tool: [
     'Unity',
     'Git',
     'Github',
