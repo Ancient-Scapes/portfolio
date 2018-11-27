@@ -2,44 +2,62 @@ export default {
   language: {
     javaScript: {
       name: 'JavaScript',
-      framework: ['Vue.js', 'Nuxt.js', 'React.js', 'AngularJS', 'jQuery']
+      item: ['Vue.js', 'Nuxt.js', 'React.js', 'AngularJS', 'jQuery']
     },
     nodeJs: {
       name: 'Node.js'
     },
     php: {
       name: 'PHP',
-      framework: ['FuelPHP', 'Laravel']
+      item: ['FuelPHP', 'Laravel']
     },
     cSharp: {
       name: 'C Sharp',
-      framework: ['dotNET', 'Unity']
+      item: ['dotNET', 'Unity']
     },
     elixir: {
       name: 'Elixir',
-      framework: ['Phoenix']
+      item: ['Phoenix']
     }
   },
   javaScriptTools: {
-    language: ['ES6', 'CSS', 'Sass'],
-    build: ['webpack', 'gulp', 'parcel', 'npm scripts'],
-    test: ['Jest', 'AVA'],
-    formatter: ['ESLint', 'Prettier']
+    language: {
+      name: '言語',
+      item: ['ES6', 'CSS', 'Sass']
+    },
+    build: {
+      name: 'ビルドツール、タスクランナー',
+      item: ['webpack', 'gulp', 'parcel', 'npm scripts']
+    },
+    test: {
+      name: 'テスト',
+      item: ['Jest', 'AVA']
+    },
+    formatter: {
+      name: 'フォーマッター',
+      item: ['ESLint', 'Prettier']
+    }
   },
-  design: {
-    tools: ['figma', 'Zeplin']
+  db: {
+    name: 'データベース',
+    item: ['MySQL', 'OracleDB', 'redis', 'SQL Server']
   },
-  db: ['MySQL', 'OracleDB', 'redis', 'SQL Server'],
-  os: ['Linux', 'Mac OSX', 'Windows'],
-  other: [
-    'Unity',
-    'git',
-    'Github',
-    'GitLab',
-    'Redmine',
-    'AWS EC2',
-    'Firebase',
-    'Netlify',
-    'docker'
-  ]
+  os: {
+    name: 'OS',
+    item: ['Linux', 'Mac OSX', 'Windows']
+  },
+  other: {
+    name: 'その他',
+    item: [
+      'Unity',
+      'git',
+      'Github',
+      'GitLab',
+      'Redmine',
+      'AWS EC2',
+      'Firebase',
+      'Netlify',
+      'docker'
+    ]
+  }
 }
