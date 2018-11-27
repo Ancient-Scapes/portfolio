@@ -7,6 +7,12 @@ export default {
     nodeJs: {
       name: 'Node.js'
     },
+    css: {
+      name: 'CSS'
+    },
+    sass: {
+      name: 'Sass'
+    },
     php: {
       name: 'PHP',
       item: ['FuelPHP', 'Laravel']
@@ -21,10 +27,6 @@ export default {
     }
   },
   javaScriptTools: {
-    language: {
-      name: '言語',
-      item: ['ES6', 'CSS', 'Sass']
-    },
     build: {
       name: 'ビルドツール、タスクランナー',
       item: ['webpack', 'gulp', 'parcel', 'npm scripts']
@@ -38,26 +40,24 @@ export default {
       item: ['ESLint', 'Prettier']
     }
   },
-  other: {
-    db: {
-      name: 'データベース',
-      item: ['MySQL', 'OracleDB', 'redis', 'SQL Server']
-    },
-    os: {
-      name: 'OS',
-      item: ['Linux', 'Mac OSX', 'Windows']
-    },
-    editor: {
-      name: '開発エディタ',
-      item: ['VSCode']
-    },
-    project: {
-      name: 'プロジェクト管理',
-      item: ['Github', 'GitLab', 'Redmine']
-    },
-    infra: {
-      name: 'インフラ関係など',
-      item: ['AWS EC2', 'Firebase', 'Netlify', 'docker']
-    }
+  db: {
+    name: 'データベース',
+    item: ['MySQL', 'OracleDB', 'redis', 'SQL Server']
+  },
+  os: {
+    name: 'OS',
+    item: ['Linux', 'Mac OSX', 'Windows']
+  },
+  editor: {
+    name: '開発エディタ',
+    item: ['VSCode']
+  },
+  project: {
+    name: 'プロジェクト管理',
+    item: ['Github', 'GitLab', 'Redmine']
+  },
+  infra: {
+    name: 'インフラ関係など',
+    item: ['AWS EC2', 'Firebase', 'Netlify', 'docker']
   }
 }
