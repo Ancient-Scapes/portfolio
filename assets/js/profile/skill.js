@@ -38,26 +38,26 @@ export default {
       item: ['ESLint', 'Prettier']
     }
   },
-  db: {
-    name: 'データベース',
-    item: ['MySQL', 'OracleDB', 'redis', 'SQL Server']
-  },
-  os: {
-    name: 'OS',
-    item: ['Linux', 'Mac OSX', 'Windows']
-  },
   other: {
-    name: 'その他',
-    item: [
-      'Unity',
-      'git',
-      'Github',
-      'GitLab',
-      'Redmine',
-      'AWS EC2',
-      'Firebase',
-      'Netlify',
-      'docker'
-    ]
+    db: {
+      name: 'データベース',
+      item: ['MySQL', 'OracleDB', 'redis', 'SQL Server']
+    },
+    os: {
+      name: 'OS',
+      item: ['Linux', 'Mac OSX', 'Windows']
+    },
+    editor: {
+      name: '開発エディタ',
+      item: ['VSCode']
+    },
+    project: {
+      name: 'プロジェクト管理',
+      item: ['Github', 'GitLab', 'Redmine']
+    },
+    infra: {
+      name: 'インフラ関係など',
+      item: ['AWS EC2', 'Firebase', 'Netlify', 'docker']
+    }
   }
 }
