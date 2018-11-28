@@ -1,5 +1,5 @@
 <template>
-  <div class="image__wrapper">
+  <div :class="`image__wrapper${small}`">
     <img 
       :src="src" 
       class="image__main">
@@ -12,6 +12,15 @@ export default {
     src: {
       type: String,
       required: true
+    },
+    isSmall: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    small() {
+      return this.isSmall ? '__small' : ''
     }
   }
 }
