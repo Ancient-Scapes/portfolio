@@ -4,7 +4,9 @@
       v-for="(value, index) in src"
       :key="index" 
       class="image--list__item">
-      <CommonImage :src="value"/>
+      <CommonImage 
+        :src="value"
+        :is-small="true"/>
     </li>
   </ul>
 </template>
