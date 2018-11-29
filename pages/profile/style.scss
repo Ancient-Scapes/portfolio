@@ -1,14 +1,7 @@
 .profile {
   &--skill {
     display: flex;
-
-    &__language {
-
-      &__list {
-        width: 550px;
-      }
-    }
+    flex-direction: column;
+    width: 80%;
   }
 }
-
-// lbaseスタイルでlist-style noen
