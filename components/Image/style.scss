@@ -3,19 +3,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 40px;
+    margin: 0 7px;
 
     &__small {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 70px;
-      height: 30px;
+      margin: 0 20px;
     }
   }
 
   &__main {
-    height: 100%;
+    object-fit: scale-down;
+    width: 55px;
+    height: 40px;
+
+    &__small {
+      width: 45px;
+      height: 35px;
+    }
+
+    &__icon {
+      width: 25px;
+      height: 25px;
+    }
   }
 }

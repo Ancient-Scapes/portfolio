@@ -7,6 +7,11 @@
       <CommonImage 
         :src="value"
         :is-small="true"/>
+      <div class="image--list__item__description">
+        <vs-chip>
+          {{ description[index] }}
+        </vs-chip>
+      </div>
     </li>
   </ul>
 </template>
@@ -22,6 +27,10 @@ export default {
     src: {
       type: Array,
       required: true
+    },
+    description: {
+      type: Array,
+      default: null
     }
   }
 }

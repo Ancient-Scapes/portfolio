@@ -1,37 +1,62 @@
 <template>
   <div class="skill">
-    <vs-list class="skill__list">
-      <vs-list-header 
-        :icon="listIcon" 
-        :title="listTitle"/>
-      <vs-list-item
+
+    <!-- 表ヘッダ -->
+    <div class="skill--header">
+      <span class="skill--header__icon">
+        アイコン
+      </span>
+      <span class="skill--header__title">
+        <TextFrame :text="listTitle"/>
+      </span>
+    </div>
+    <ul class="skill--list">
+      <li 
         v-for="(value, index) in data"
         :key="index"
-        :title="value.name"
-        class="skill__list__item">
-        <!-- 言語アイコン -->
-        <template 
-          slot="avatar">
-          <CommonImage :src="`/img/profile/${mainImgDirName}/${value.name}.png`"/>
-        </template>
-
-        <div
-          class="skill__list__item__sub">
-          <ImageList :src="getSrc(value.item, subImgDirName)"/>
+        class="skill--list__item">
+        <vs-card>
+          <div 
+            slot="header"
+            class="card--header">
+            <span class="card--header__icon">
+              <CommonImage 
+                v-if="!value.icon"
+                :src="`/img/profile/${imgDirName}/${value.name}.png`"
+                :is-icon="true"/>
+            </span>
+            <span class="card--header__title">
+              <h3>{{ value.name }}</h3>
+            </span>
+          </div>
+          <div v-if="value.item">
+            <ImageList 
+              :src="getSrc(value.item, imgDirName)"
+              :description="value.item"/>
+          </div>
+        </vs-card>
+        <!-- <div class="skill--list__item__main">
+          <CommonImage :src="`/img/profile/${imgDirName}/${value.name}.png`"/>
+          <span class="skill--list__item__main__text">{{ value.name }}</span>
         </div>
-      </vs-list-item>
-    </vs-list>
+        <div class="skill--list__item__sub">
+          <ImageList :src="getSrc(value.item, imgDirName)"/>
+        </div> -->
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
 import CommonImage from '~/components/Image/index.vue'
 import ImageList from '~/components/ImageList/index.vue'
+import TextFrame from '~/components/Animation/TextFrame'
 
 export default {
   components: {
     CommonImage,
-    ImageList
+    ImageList,
+    TextFrame
   },
   props: {
     data: {
@@ -46,19 +71,15 @@ export default {
       type: String,
       required: true
     },
-    mainImgDirName: {
+    imgDirName: {
       type: String,
-      required: true
-    },
-    subImgDirName: {
-      type: String,
-      required: true
+      default: null
     }
   },
   methods: {
-    getSrc(arr, subImgDirName) {
+    getSrc(arr, imgDirName) {
       return Array.prototype.map.call(Object(arr), value => {
-        return `/img/profile/${subImgDirName}/${value}.png`
+        return `/img/profile/${imgDirName}/${value}.png`
       })
     }
   }

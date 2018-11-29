@@ -1,0 +1,38 @@
+.text--frame {
+  margin: 10px;
+
+
+
+  &__bg {
+    position: relative;
+    transition: all .5s cubic-bezier(.86, 0, .07, 1);
+
+    &__active {
+      padding: 0 20px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 19px;
+      height: 100%;
+      border-radius: 5px;
+      border-left: solid 1px black;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      width: 19px;
+      height: 100%;
+      border-radius: 5px;
+      border-right: solid 1px black;
+    }
+  }
+}

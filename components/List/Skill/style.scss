@@ -1,4 +1,24 @@
 .skill {
 
-  &__list {}
+  &--header {}
+
+  &--list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    /deep/ .con-vs-card {
+      width: 300px;
+    }
+  }
+}
+
+.card {
+  &--header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
