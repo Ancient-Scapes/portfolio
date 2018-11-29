@@ -1,4 +1,9 @@
+// @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Rajdhani');
+
 .default {
+  font-family: 'Rajdhani', 'Noto Serif JP', sans-serif;
+
   &--header {}
 
   &--main {
