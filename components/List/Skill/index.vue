@@ -3,11 +3,10 @@
 
     <!-- 表ヘッダ -->
     <div class="skill--header">
-      <span class="skill--header__icon">
-        アイコン
-      </span>
       <span class="skill--header__title">
-        <TextFrame :text="listTitle"/>
+        <TextFrame
+          :text="listTitle"
+          icon="build"/>
       </span>
     </div>
     <ul class="skill--list">
@@ -35,13 +34,6 @@
               :description="value.item"/>
           </div>
         </vs-card>
-        <!-- <div class="skill--list__item__main">
-          <CommonImage :src="`/img/profile/${imgDirName}/${value.name}.png`"/>
-          <span class="skill--list__item__main__text">{{ value.name }}</span>
-        </div>
-        <div class="skill--list__item__sub">
-          <ImageList :src="getSrc(value.item, imgDirName)"/>
-        </div> -->
       </li>
     </ul>
   </div>

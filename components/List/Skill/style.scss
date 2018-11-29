@@ -1,15 +1,30 @@
 .skill {
 
-  &--header {}
+  &--header {
+    display: flex;
+    border-bottom: solid 1px black;
+    margin: 10px;
+  }
 
   &--list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border: solid 1px black;
+    padding: 20px;
+    border-radius: 5%;
 
     /deep/ .con-vs-card {
       width: 300px;
+      height: 90%;
+    }
+
+    /deep/ .vs-card--content {
+      display: flex;
+      flex-direction: column;
+      height: 70%;
+      justify-content: center;
     }
   }
 }
