@@ -1,11 +1,15 @@
-.header {}
+.default {
+  &--header {}
 
-.main {
-  display: flex;
-  background-color: aliceblue;
-  margin: 2.5%;
-  padding: 2.5%;
-  border: solid 1px blue;
+  &--main {
+    display: flex;
+    background-color: aliceblue;
+    margin: 2.5%;
+    padding: 2.5%;
+    border: solid 1px blue;
+  }
+
+
+  &--footer {}
+
 }
-
-.footer {}
