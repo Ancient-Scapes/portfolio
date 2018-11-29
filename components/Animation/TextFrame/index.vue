@@ -4,6 +4,9 @@
       <span
         v-observe-visibility="visibilityChanged" 
         class="text--frame__bg">
+        <i
+          v-if="icon" 
+          class="material-icons">{{ icon }}</i>
         <span>{{ text }}</span>
       </span>
     </h2>
@@ -11,8 +14,17 @@
 </template>
 
 <script>
+import Icon from '~/components/Icon'
+
 export default {
+  components: {
+    Icon
+  },
   props: {
+    icon: {
+      type: String,
+      default: null
+    },
     text: {
       type: String,
       required: true

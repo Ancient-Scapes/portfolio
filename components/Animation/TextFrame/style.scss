@@ -1,7 +1,10 @@
+$animationWidth: 19px;
+$animationHeight: 100%;
+$animationBorderRadius: 25%;
+$animationBorder: solid 3px black;
+
 .text--frame {
   margin: 10px;
-
-
 
   &__bg {
     position: relative;
@@ -17,10 +20,10 @@
       top: 0;
       left: 0;
       z-index: 1;
-      width: 19px;
-      height: 100%;
-      border-radius: 5px;
-      border-left: solid 1px black;
+      width: $animationWidth;
+      height: $animationHeight;
+      border-radius: $animationBorderRadius;
+      border-left: $animationBorder;
     }
 
     &::after {
@@ -29,10 +32,10 @@
       top: 0;
       right: 0;
       z-index: 1;
-      width: 19px;
-      height: 100%;
-      border-radius: 5px;
-      border-right: solid 1px black;
+      width: $animationWidth;
+      height: $animationHeight;
+      border-radius: $animationBorderRadius;
+      border-right: $animationBorder;
     }
   }
 }
