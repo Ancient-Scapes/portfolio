@@ -11,10 +11,8 @@ export default {
         name: 'Node.js'
       },
       css: {
-        name: 'CSS'
-      },
-      sass: {
-        name: 'Sass'
+        name: 'CSS',
+        item: ['Sass']
       },
       php: {
         name: 'PHP',
@@ -36,14 +34,17 @@ export default {
     item: {
       build: {
         name: 'ビルドツール、タスクランナー',
+        icon: 'build',
         item: ['webpack', 'gulp', 'parcel', 'npm scripts']
       },
       test: {
         name: 'テスト',
+        icon: 'build',
         item: ['Jest', 'AVA']
       },
       formatter: {
         name: 'フォーマッター',
+        icon: 'build',
         item: ['ESLint', 'Prettier']
       }
     }
@@ -54,10 +55,12 @@ export default {
     item: {
       rdbms: {
         name: 'RDBMS',
+        icon: 'build',
         item: ['MySQL', 'OracleDB', 'SQL Server']
       },
       nosql: {
         name: 'NoSQL',
+        icon: 'build',
         item: ['redis']
       }
     }
@@ -75,7 +78,7 @@ export default {
         item: ['Mac OSX']
       },
       linux: {
-        name: 'Linux系',
+        name: 'Linux',
         item: ['CentOS']
       }
     }
@@ -85,12 +88,13 @@ export default {
     icon: 'build',
     item: {
       git: {
-        name: 'git系',
+        name: 'git',
         item: ['Github', 'GitLab']
       },
       task: {
         name: 'タスク管理',
-        item: ['Redmione']
+        icon: 'assignment_turned_in',
+        item: ['Redmine']
       }
     }
   },
@@ -105,10 +109,6 @@ export default {
       firebase: {
         name: 'Firebase',
         item: ['Cloud Functions']
-      },
-      deploy: {
-        name: 'デプロイ',
-        item: ['Netlify']
       },
       docker: {
         name: 'docker',
