@@ -30,6 +30,7 @@ import ImageList from '~/components/ImageList/index.vue'
 import SkillList from '~/components/List/Skill/index.vue'
 
 export default {
+  layouts: 'default',
   components: {
     CommonImage,
     ImageList,
