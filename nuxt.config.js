@@ -43,9 +43,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{
-    src: '~plugins/vuesax.js'
-  }],
+  plugins: ['~plugins/vuesax.js', '~plugins/vueObserveVisibility.js'],
 
   /*
    ** Nuxt.js modules
