@@ -8,7 +8,8 @@ export default {
         item: ['Vue.js', 'Nuxt.js', 'React.js', 'AngularJS', 'jQuery']
       },
       nodeJs: {
-        name: 'Node.js'
+        name: 'Node.js',
+        item: ['yarn']
       },
       css: {
         name: 'CSS',
@@ -35,7 +36,7 @@ export default {
       build: {
         name: 'ビルドツール、タスクランナー',
         icon: 'build',
-        item: ['webpack', 'gulp', 'parcel', 'npm scripts']
+        item: ['webpack', 'parcel', 'gulp', 'npm scripts', 'BABEL']
       },
       test: {
         name: 'テスト',
