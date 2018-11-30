@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import MenuButton from '@/components/Button/Menu/index.vue'
+import MenuButton from '@/components/Button/Menu'
 
 export default {
   components: {
@@ -70,4 +70,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="~/components/Header/style.scss"/>
+<style lang="scss" src="./style.scss"/>

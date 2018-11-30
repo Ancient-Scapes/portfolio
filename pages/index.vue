@@ -1,5 +1,6 @@
 <template>
   <section class="home">
+
     <div
       v-if="$store.getters.isOld" 
       class="home--title__old">
@@ -27,7 +28,7 @@
 </template>
 
 <script>
-import Header from '@/components/Header/index.vue'
+import Header from '@/components/Header'
 
 export default {
   components: {
@@ -36,4 +37,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="~/pages/style.scss"/>
+<style lang="scss" src="./style.scss"/>

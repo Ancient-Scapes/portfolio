@@ -40,8 +40,8 @@
 </template>
 
 <script>
-import CommonImage from '~/components/Image/index.vue'
-import ImageList from '~/components/ImageList/index.vue'
+import CommonImage from '~/components/Image'
+import ImageList from '~/components/ImageList'
 import TextFrame from '~/components/Animation/TextFrame'
 
 export default {
@@ -78,4 +78,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="~/components/List/Skill/style.scss"/>
+<style lang="scss" src="./style.scss"/>
