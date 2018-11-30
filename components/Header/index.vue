@@ -4,7 +4,7 @@
       v-if="$store.getters.isOld"
       class="header__list header__list__old">
       <li
-        v-for="(value, index) in links"
+        v-for="(value, index) in MenuContents.links"
         :key="index" 
         class="header__list__item header__list__item__old">
         <MenuButton 
@@ -16,7 +16,7 @@
       v-else-if="$store.getters.isFuture"
       class="header__list header__list__future">
       <li
-        v-for="(value, index) in links"
+        v-for="(value, index) in MenuContents.links"
         :key="index" 
         class="header__list__item header__list__item__future">
         <vs-button>
@@ -40,6 +40,7 @@
 
 <script>
 import MenuButton from '@/components/Button/Menu'
+import MenuContents from '~/assets/js/Components/Header/menu.js'
 
 export default {
   components: {
@@ -47,24 +48,7 @@ export default {
   },
   data() {
     return {
-      links: [
-        {
-          name: 'ホーム',
-          link: '/'
-        },
-        {
-          name: 'プロフィール',
-          link: '/profile'
-        },
-        {
-          name: '経歴',
-          link: '/history'
-        },
-        {
-          name: '工事中',
-          link: '/questions'
-        }
-      ]
+      MenuContents
     }
   }
 }

@@ -7,7 +7,7 @@
     <!-- 使える言語、技術など -->
     <div class="profile--skill">
 
-      <skillList
+      <SkillList
         v-for="(value, key) in skill"
         :key="key"
         :data="value.item"
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import skill from '~/assets/js/profile/skill.js'
+import skill from '~/assets/js/Pages/profile/skill.js'
 import CommonImage from '~/components/Image/index.vue'
 import ImageList from '~/components/ImageList/index.vue'
 import SkillList from '~/components/List/Skill/index.vue'
