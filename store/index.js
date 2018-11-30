@@ -4,7 +4,7 @@ const createStore = () => {
   return new Vuex.Store({
     state: () => ({
       mode: {
-        isOld: true,
+        isOld: false,
         isFuture: true
       }
     }),
