@@ -1,25 +1,32 @@
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+
+  &--header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
 
   &__list {
     display: flex;
     flex-direction: row;
     list-style: none;
+    justify-content: center;
+    width: 95%;
 
     &__item {
-      margin: 15px;
+      display: flex;
+      margin: 10px 15px;
+    }
 
-      &__future {
-        a {
-          color: white;
+    &__future{
+      &__title {
+        &__text {
+          color: black;
         }
       }
     }
-  }
-
-  &__mode {
-    display: flex;
   }
 }
