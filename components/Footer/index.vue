@@ -5,15 +5,6 @@
         ©SugarShootingStar
       </span>
     </div>
-
-    <div class="footer__mode">
-      <vs-chip>
-        <vs-avatar
-          icon="thumb_up"
-          @click="$store.commit('changeMode')"/>
-        {{ $store.getters.getMode }}
-      </vs-chip>
-    </div>
   </section>
 </template>
 
