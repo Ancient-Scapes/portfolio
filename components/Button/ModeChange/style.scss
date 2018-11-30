@@ -1,0 +1,19 @@
+.modechange {
+
+  &__old {
+
+    &__button {
+      cursor: pointer;
+      border: double;
+
+      &__text {
+        color: red;
+        padding: 5px;
+      }
+    }
+  }
+
+  &__future {
+
+  }
+}
