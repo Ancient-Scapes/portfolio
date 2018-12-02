@@ -38,12 +38,22 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['normalize.css', '~/assets/css/base.css'],
+  css: [
+    'normalize.css',
+    '~/assets/css/base.css'
+  ],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~plugins/vuesax.js', '~plugins/vueObserveVisibility.js'],
+  plugins: [
+    '~plugins/vuesax.js',
+    '~plugins/vueObserveVisibility.js',
+    {
+      src: '~plugins/three.js',
+      ssr: false
+    }
+  ],
 
   /*
    ** Nuxt.js modules
