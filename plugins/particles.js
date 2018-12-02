@@ -1,3 +1,1 @@
-import Vue from 'vue'
-import VueParticles from 'vue-particles'
-Vue.use(VueParticles)
+import particlesJS from 'particles.js'

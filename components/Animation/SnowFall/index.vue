@@ -12,7 +12,6 @@ export default {
     }
   },
   mounted() {
-    require('particles.js')
     window.particlesJS('snowfall', snow.data)
   }
 }
