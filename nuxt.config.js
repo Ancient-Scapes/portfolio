@@ -52,7 +52,8 @@ module.exports = {
     {
       src: '~plugins/three.js',
       ssr: false
-    }
+    },
+    '~plugins/particles.js'
   ],
 
   /*
