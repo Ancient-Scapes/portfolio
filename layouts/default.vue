@@ -1,6 +1,5 @@
 <template>
   <div class="default">
-    <SnowFall/>
     <Header class="default--header"/>
     <section class="default--main">
       <nuxt/>
@@ -12,13 +11,11 @@
 <script>
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
-import SnowFall from '~/components/Animation/SnowFall'
 
 export default {
   components: {
     Header,
-    Footer,
-    SnowFall
+    Footer
   }
 }
 </script>
