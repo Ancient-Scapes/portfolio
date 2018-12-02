@@ -21,8 +21,7 @@ export default {
           nb_sides: 5
         },
         image: {
-          // eslint-disable-next-line
-          src: 'http://www.dynamicdigital.us/wp-content/uploads/2013/02/starburst_white_300_drop_2.png',
+          src: '/img/particles/snow.png',
           width: 100,
           height: 100
         }
@@ -71,17 +70,6 @@ export default {
     },
     interactivity: {
       detect_on: 'canvas',
-      events: {
-        onhover: {
-          enable: true,
-          mode: 'bubble'
-        },
-        onclick: {
-          enable: true,
-          mode: 'repulse'
-        },
-        resize: true
-      },
       modes: {
         grab: {
           distance: 150,
