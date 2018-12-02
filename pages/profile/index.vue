@@ -25,9 +25,9 @@
 
 <script>
 import skill from '~/assets/js/Pages/profile/skill.js'
-import CommonImage from '~/components/Image/index.vue'
-import ImageList from '~/components/ImageList/index.vue'
-import SkillList from '~/components/List/Skill/index.vue'
+import CommonImage from '~/components/Image'
+import ImageList from '~/components/ImageList'
+import SkillList from '~/components/List/Skill'
 
 export default {
   layouts: 'default',
