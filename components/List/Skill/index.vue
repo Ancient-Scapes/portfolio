@@ -4,7 +4,7 @@
     <!-- 表ヘッダ -->
     <div class="skill--header">
       <span class="skill--header__title">
-        <TextFrame
+        <Headding
           :text="listTitle"
           icon="build"/>
       </span>
@@ -42,13 +42,13 @@
 <script>
 import CommonImage from '~/components/Image'
 import ImageList from '~/components/ImageList'
-import TextFrame from '~/components/Animation/TextFrame'
+import Headding from '~/components/Heading'
 
 export default {
   components: {
     CommonImage,
     ImageList,
-    TextFrame
+    Headding
   },
   props: {
     data: {
