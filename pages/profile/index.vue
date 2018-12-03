@@ -6,7 +6,6 @@
 
     <!-- 使える言語、技術など -->
     <div class="profile--skill">
-
       <SkillList
         v-for="(value, key) in skill"
         :key="key"
@@ -14,12 +13,7 @@
         :list-title="value.title"
         :list-icon="value.icon"
         :img-dir-name="key"/>
-
     </div>
-    <!-- 業務経歴など -->
-    <!-- <div class="profile--history"></div> -->
-    <!-- 成果物など -->
-    <!-- <div class="profile--works"></div> -->
   </section>
 </template>
 
