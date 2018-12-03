@@ -1,0 +1,26 @@
+.heading {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 0 30%;
+
+  &::before {
+    content: "";
+    width: 30%;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(to left, rgb(30, 30, 30), transparent);
+  }
+
+  &::after {
+    content: "";
+    width: 30%;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, rgb(30, 30, 30), transparent);
+  }
+}
