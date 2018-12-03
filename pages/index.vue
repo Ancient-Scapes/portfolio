@@ -16,6 +16,7 @@
     <div 
       v-else-if="$store.getters.isFuture"
       class="home--title__future">
+      <SnowFall/>
       <h1 class="home--title__future__text">
         しゅけピーのホームページ
       </h1>
@@ -29,10 +30,12 @@
 
 <script>
 import Header from '@/components/Header'
+import SnowFall from '~/components/Animation/SnowFall'
 
 export default {
   components: {
-    Header
+    Header,
+    SnowFall
   }
 }
 </script>
