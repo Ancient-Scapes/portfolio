@@ -57,8 +57,8 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['nuxt-sass-resources-loader', '~/assets/scss/mixins/media.scss']
   ],
   /*
    ** Axios module configuration
