@@ -1,7 +1,5 @@
 .image--list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  @include flex-row;
 
   &__item {
     margin: 0 -10px;

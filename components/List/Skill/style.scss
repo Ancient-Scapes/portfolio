@@ -5,10 +5,7 @@
   }
 
   &--list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex-row;
     padding: 20px;
 
     /deep/ .con-vs-card {
