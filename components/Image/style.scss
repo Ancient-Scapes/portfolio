@@ -1,8 +1,6 @@
 .image {
   &__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     margin: 0 7px;
 
     &__small {

@@ -10,10 +10,8 @@
   }
 
   &__list {
-    display: flex;
+    @include flex-center;
     flex-direction: row;
-    list-style: none;
-    justify-content: center;
     width: 95%;
 
     &__item {

@@ -16,19 +16,16 @@
     }
 
     /deep/ .vs-card--content {
-      display: flex;
+      @include flex-center;
       flex-direction: column;
       height: 70%;
-      justify-content: center;
     }
   }
 }
 
 .card {
   &--header {
-    display: flex;
+    @include flex-center;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 }
