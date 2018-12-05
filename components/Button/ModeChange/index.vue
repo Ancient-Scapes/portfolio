@@ -2,7 +2,7 @@
   <div class="modechange">
     <div
       v-if="$store.getters.isOld"
-      class="modechange__old">
+      class="modechange__wrapper modechange__wrapper__old">
       <button 
         class="modechange__old__button"
         @click="$store.commit('changeMode')">
@@ -11,14 +11,16 @@
         </div>
       </button>
     </div>
-    <vs-chip 
+    <div
       v-else-if="$store.getters.isFuture"
-      class="modechange__future">
-      <vs-avatar
-        icon="thumb_up"
-        @click="$store.commit('changeMode')"/>
-      {{ $store.getters.getMode }}
-    </vs-chip>
+      class="modechange__wrapper modechange__wrapper__future">
+      <vs-button 
+        icon="build"
+        @click="$store.commit('changeMode')">
+        {{ $store.getters.getMode }}
+      </vs-button>
+    </div>
+
   </div>
 </template>
 
