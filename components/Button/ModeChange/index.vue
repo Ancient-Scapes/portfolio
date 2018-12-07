@@ -1,26 +1,26 @@
 <template>
-  <div class="modechange">
+  <div>
+    <!-- 古代版 -->
     <div
       v-if="$store.getters.isOld"
-      class="modechange__wrapper modechange__wrapper__old">
+      class="modechange--old">
       <button 
-        class="modechange__old__button"
+        class="modechange--old__button"
         @click="$store.commit('changeMode')">
-        <div class="modechange__old__button__text">
+        <div class="modechange--old__button__text">
           {{ oldButtonText }}
         </div>
       </button>
     </div>
-    <div
+    <!-- 現代版 -->
+    <vs-button
       v-else-if="$store.getters.isFuture"
-      class="modechange__wrapper modechange__wrapper__future">
-      <vs-button 
-        icon="build"
-        @click="$store.commit('changeMode')">
-        {{ $store.getters.getMode }}
-      </vs-button>
-    </div>
-
+      icon="build"
+      color="success"
+      class="modechange--future"
+      @click="$store.commit('changeMode')">
+      {{ $store.getters.getMode }}
+    </vs-button>
   </div>
 </template>
 

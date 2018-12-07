@@ -1,7 +1,5 @@
 .modechange {
-
-  &__old {
-
+  &--old {
     &__button {
       cursor: pointer;
       border: double;
@@ -13,7 +11,5 @@
     }
   }
 
-  &__future {
-
-  }
+  &--future {}
 }
