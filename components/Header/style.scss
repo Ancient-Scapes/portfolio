@@ -1,33 +1,45 @@
 .header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  overflow: auto;
+  height: 50px;
 
   &--header {
-    width: 100%;
-    display: flex;
-    align-items: center;
+    @include flex-center;
+    width: $width-header;
+    height: $height-header;
+    padding: $padding-header;
   }
 
   &__list {
     @include flex-center;
+    width: $width-header;
     flex-direction: row;
-    width: 95%;
 
-    &__item {
-      display: flex;
-      margin: 10px;
+    &--old {
+      &__item {
+        display: flex;
+        margin: 10px;
+        font-size: $font-size-header-item;
 
-      &::after {
-        content: "|";
-        margin-left: 20px;
+        &::after {
+          content: "|";
+          margin-left: 20px;
+        }
+      }
+
+      &__mode {
+        font-size: $font-size-header-item;
       }
     }
 
-    &__future {
-      &__title {
-        &__text {
-          color: black;
+    &--future {
+      height: $height-header;
+      padding: $padding-header;
+
+      &__mode {
+        font-size: $font-size-header-item;
+
+        /deep/ .material-icons {
+          font-size: $font-size-header-item;
         }
       }
     }
