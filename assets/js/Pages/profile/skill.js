@@ -5,7 +5,7 @@ export default {
     item: {
       javaScript: {
         name: 'JavaScript',
-        item: ['Vue.js', 'Nuxt.js', 'React.js', 'AngularJS', 'jQuery']
+        item: ['Vue.js', 'Nuxt.js']
       },
       nodeJs: {
         name: 'Node.js',
