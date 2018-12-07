@@ -4,15 +4,23 @@
 
   &--header {
     @include flex-center;
-    width: $width-header;
     height: $height-header;
     padding: $padding-header;
+
+    @include pc {}
+
+    @include sp {
+      width: $width-header;
+    }
   }
 
   &__list {
     @include flex-center;
-    width: $width-header;
-    flex-direction: row;
+
+    @include sp {
+      width: $width-header;
+      flex-direction: row;
+    }
 
     &--old {
       &__item {
@@ -34,6 +42,12 @@
     &--future {
       height: $height-header;
       padding: $padding-header;
+
+      @include pc {
+        /deep/ .vs-navbar {
+          @include flex-center;
+        }
+      }
 
       &__mode {
         font-size: $font-size-header-item;

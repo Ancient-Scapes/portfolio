@@ -30,9 +30,6 @@
         <!-- プロフィール画像 -->
         <vs-avatar src="/img/profile/karipori.png"/>
 
-        <!-- いい感じの余白 -->
-        <vs-spacer/>
-
         <!-- ページリンク -->
         <vs-navbar-item 
           v-for="(value, index) in MenuContents.links"
