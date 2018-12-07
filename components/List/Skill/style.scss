@@ -9,8 +9,11 @@
     padding: 20px;
 
     /deep/ .con-vs-card {
-      width: 340px;
       height: 90%;
+
+      @include pc {
+        width: 340px;
+      }
     }
 
     /deep/ .vs-card--content {
