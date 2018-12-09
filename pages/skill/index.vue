@@ -1,11 +1,13 @@
 <template>
-  <section class="profile">
-    <div class="profile--title">
-      プロフィールページ
+  <section class="skill">
+
+    <!-- タイトルのコンポーネント化 -->
+    <div class="skill--title">
+      スキルページ
     </div>
 
     <!-- 使える言語、技術など -->
-    <div class="profile--skill">
+    <div class="skill--main">
       <SkillList
         v-for="(value, key) in skill"
         :key="key"
@@ -18,7 +20,7 @@
 </template>
 
 <script>
-import skill from '~/assets/js/Pages/profile/skill.js'
+import skill from '~/assets/js/Pages/skill/skill.js'
 import CommonImage from '~/components/Image'
 import ImageList from '~/components/ImageList'
 import SkillList from '~/components/List/Skill'
@@ -37,4 +39,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="~/pages/profile/style.scss"/>
+<style lang="scss" src="./style.scss"/>
