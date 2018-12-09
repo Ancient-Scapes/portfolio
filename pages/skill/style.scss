@@ -1,9 +1,9 @@
-.profile {
+.skill {
   &--title {
     @include flex-center;
   }
 
-  &--skill {
+  &--main {
     display: flex;
     flex-direction: column;
   }
