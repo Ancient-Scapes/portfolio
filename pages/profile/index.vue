@@ -22,4 +22,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="~/pages/profile/style.scss"/>
+<style lang="scss" src="./style.scss"/>
