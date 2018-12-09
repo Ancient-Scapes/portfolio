@@ -2,9 +2,4 @@
   &--title {
     @include flex-center;
   }
-
-  &--skill {
-    display: flex;
-    flex-direction: column;
-  }
 }

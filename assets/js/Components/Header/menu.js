@@ -11,6 +11,11 @@ export default {
       link: '/profile'
     },
     {
+      name: 'スキル',
+      nameEn: 'Skill',
+      link: '/skill'
+    },
+    {
       name: '作ったもの',
       nameEn: 'Works',
       link: '/works'
