@@ -1,6 +1,5 @@
 <template>
   <section class="skill">
-
     <!-- タイトルのコンポーネント化 -->
     <div class="skill--title">
       スキルページ
@@ -21,13 +20,11 @@
 
 <script>
 import skill from '~/assets/js/Pages/skill/skill.js'
-import CommonImage from '~/components/Image'
 import ImageList from '~/components/ImageList'
 import SkillList from '~/components/List/Skill'
 
 export default {
   components: {
-    CommonImage,
     ImageList,
     SkillList
   },
