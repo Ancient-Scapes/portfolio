@@ -41,18 +41,16 @@
     &--future {
       height: $height-header;
 
-      @include pc {
-        /deep/ .vs-navbar {
-          @include flex-center;
-        }
-      }
-
       &__mode {
         font-size: $font-size-header-item;
 
         /deep/ .material-icons {
           font-size: $font-size-header-item;
         }
+      }
+
+      /deep/ .vs-navbar {
+        @include flex-center;
       }
     }
   }
