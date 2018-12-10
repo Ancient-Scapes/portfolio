@@ -20,8 +20,8 @@ export default {
         item: ['FuelPHP', 'Laravel']
       },
       cSharp: {
-        name: 'C Sharp',
-        item: ['dotNET', 'Unity']
+        name: 'C#',
+        item: ['.NET', 'Unity']
       },
       elixir: {
         name: 'Elixir',

@@ -1,6 +1,5 @@
 <template>
   <div class="skill">
-
     <!-- 表ヘッダ -->
     <div class="skill--header">
       <span class="skill--header__title">
@@ -21,7 +20,7 @@
             <span class="card--header__icon">
               <CommonImage 
                 v-if="!value.icon"
-                :src="`/img/profile/${imgDirName}/${value.name}.png`"
+                :src="`/img/profile/${imgDirName}/${getContentsName(value.name)}.png`"
                 :is-icon="true"/>
             </span>
             <span class="card--header__title">
@@ -70,9 +69,30 @@ export default {
   },
   methods: {
     getSrc(arr, imgDirName) {
-      return Array.prototype.map.call(Object(arr), value => {
-        return `/img/profile/${imgDirName}/${value}.png`
-      })
+      return Array.prototype.map.call(
+        Object(arr),
+        function(value) {
+          const filename = this.getContentsName(value)
+          return `/img/profile/${imgDirName}/${filename}.png`
+        }.bind(this)
+      )
+    },
+    // #と.がファイル名に含まれているのでファイルパスを変えて取得(そのままだと取れなかった)
+    getContentsName(originName) {
+      let contentsName
+
+      switch (originName) {
+        case 'C#':
+          contentsName = 'C Sharp'
+          break
+        case '.NET':
+          contentsName = 'dotNET'
+          break
+        default:
+          contentsName = originName
+          break
+      }
+      return contentsName
     }
   }
 }
