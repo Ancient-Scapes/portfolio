@@ -3,7 +3,7 @@
     <!-- 表ヘッダ -->
     <div class="skill--header">
       <span class="skill--header__title">
-        <Headding
+        <Heading
           :text="listTitle"
           icon="build"/>
       </span>
@@ -41,13 +41,13 @@
 <script>
 import CommonImage from '~/components/Image'
 import ImageList from '~/components/ImageList'
-import Headding from '~/components/Heading'
+import Heading from '~/components/Heading'
 
 export default {
   components: {
     CommonImage,
     ImageList,
-    Headding
+    Heading
   },
   props: {
     data: {
