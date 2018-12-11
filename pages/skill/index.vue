@@ -1,37 +1,22 @@
 <template>
   <section class="skill">
-    <!-- タイトルのコンポーネント化 -->
-    <div class="skill--title">
-      スキルページ
+    <div v-if="$store.getters.isOld">
+      <Old/>
     </div>
-
-    <!-- 使える言語、技術など -->
-    <div class="skill--main">
-      <SkillList
-        v-for="(value, key) in skill"
-        :key="key"
-        :data="value.item"
-        :list-title="value.title"
-        :list-icon="value.icon"
-        :img-dir-name="key"/>
+    <div v-else-if="$store.getters.isFuture">
+      <Future/>
     </div>
   </section>
 </template>
 
 <script>
-import skill from '~/assets/js/Pages/skill/skill.js'
-import ImageList from '~/components/ImageList'
-import SkillList from '~/components/List/Skill'
+import Old from '~/components/Pages/Skill/Old'
+import Future from '~/components/Pages/Skill/Future'
 
 export default {
   components: {
-    ImageList,
-    SkillList
-  },
-  data() {
-    return {
-      skill
-    }
+    Old,
+    Future
   }
 }
 </script>

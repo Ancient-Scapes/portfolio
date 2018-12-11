@@ -1,0 +1,19 @@
+.skill {
+
+  &--header {
+    margin: 10px;
+  }
+
+  &--list {
+    @include flex-row;
+    padding: 20px;
+
+    &__item {
+
+      &--header {
+        @include flex-center;
+        flex-direction: row;
+      }
+    }
+  }
+}
