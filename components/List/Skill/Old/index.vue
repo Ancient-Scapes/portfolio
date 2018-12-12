@@ -1,25 +1,30 @@
 <template>
-  <div class="skill">
+  <div class="skill--old">
     <!-- 表ヘッダ -->
-    <div class="skill--header">
-      <span class="skill--header__title">
+    <div class="skill--old--header">
+      <span class="skill--old--header__title">
         {{ listTitle }}
       </span>
     </div>
-    <ul class="skill--list">
+    <ul class="skill--old--list">
       <li 
         v-for="(value, index) in data"
         :key="index"
-        class="skill--list__item">
-        <div class="skill--list__item--header">
-          <span class="skill--list__item__title">
+        class="skill--old--list__item">
+        <div class="skill--old--list__item--header">
+          <span class="skill--old--list__item__title">
             <h3>{{ value.name }}</h3>
           </span>
         </div>
         <div v-if="value.item">
-          <ImageList 
-            :src="getSrc(value.item, imgDirName)"
-            :description="value.item"/>
+          <ul class="skill--old--list__item--list">
+            <li
+              v-for="(value2, index2) in value.item"
+              :key="index2"
+              class="skill--old--list__item--list__item">
+              {{ value2 }}
+            </li>
+          </ul>
         </div>
       </li>
     </ul>

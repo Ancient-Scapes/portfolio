@@ -1,11 +1,11 @@
-.skill {
-
+.skill--old {
   &--header {
     margin: 10px;
   }
 
   &--list {
     @include flex-row;
+    border: solid 1px black;
     padding: 20px;
 
     &__item {
@@ -13,6 +13,13 @@
       &--header {
         @include flex-center;
         flex-direction: row;
+      }
+
+      &--list {
+        list-style-type: disc;
+        &__item {
+          
+        }
       }
     }
   }

@@ -1,18 +1,18 @@
 <template>
-  <div class="skill">
+  <div class="skill--future">
     <!-- 表ヘッダ -->
-    <div class="skill--header">
-      <span class="skill--header__title">
+    <div class="skill--future--header">
+      <span class="skill--future--header__title">
         <Heading
           :text="listTitle"
           icon="build"/>
       </span>
     </div>
-    <ul class="skill--list">
+    <ul class="skill--future--list">
       <li 
         v-for="(value, index) in data"
         :key="index"
-        class="skill--list__item">
+        class="skill--future--list__item">
         <vs-card>
           <div 
             slot="header"
