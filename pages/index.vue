@@ -1,27 +1,26 @@
 <template>
   <section class="home">
-
     <div
       v-if="$store.getters.isOld" 
-      class="home--title__old">
+      class="home__title--old">
       <marquee 
         behavior="scroll" 
         direction="left"
-        class="home--title__old__text">しゅけピーのホームページ</marquee>
+        class="home__title--old__text">しゅけピーのホームページ</marquee>
       
-      <span class="home--title__old__description">
+      <span class="home__title--old__description">
         Sorry, This Homepage is Japanese Only.
       </span>
     </div>
     <div 
       v-else-if="$store.getters.isFuture"
-      class="home--title__future">
+      class="home__title--future">
       <SnowFall/>
-      <h1 class="home--title__future__text">
+      <h1 class="home__title--future__text">
         しゅけピーのホームページ
       </h1>
 
-      <span class="home--title__future__description">
+      <span class="home__title--future__description">
         たかし
       </span>
     </div>

@@ -1,29 +1,29 @@
 <template>
   <div class="skill--future">
     <!-- 表ヘッダ -->
-    <div class="skill--future--header">
-      <span class="skill--future--header__title">
+    <div class="skill--future__header">
+      <span class="skill--future__header__title">
         <Heading
           :text="listTitle"
           icon="build"/>
       </span>
     </div>
-    <ul class="skill--future--list">
+    <ul class="skill--future__list">
       <li 
         v-for="(value, index) in data"
         :key="index"
-        class="skill--future--list__item">
+        class="skill--future__list__item">
         <vs-card>
           <div 
             slot="header"
-            class="card--header">
-            <span class="card--header__icon">
+            class="card__header">
+            <span class="card__header__icon">
               <CommonImage 
                 v-if="!value.icon"
                 :src="`/img/profile/${imgDirName}/${getContentsName(value.name)}.png`"
                 :is-icon="true"/>
             </span>
-            <span class="card--header__title">
+            <span class="card__header__title">
               <h3>{{ value.name }}</h3>
             </span>
           </div>

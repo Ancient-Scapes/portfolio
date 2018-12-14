@@ -9,9 +9,9 @@ article {
   justify-content: center;
   align-items: center;
 
-  &--title {
+  &__title {
 
-    &__old {
+    &--old {
 
       &__text {
         font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
@@ -28,7 +28,7 @@ article {
       }
     }
 
-    &__future {
+    &--future {
 
       &__text {
         font-family: 'Courier New', Courier, monospace

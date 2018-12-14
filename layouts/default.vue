@@ -1,10 +1,10 @@
 <template>
   <div class="default">
-    <Header class="default--header"/>
-    <section class="default--main">
+    <Header class="default__header"/>
+    <section class="default__main">
       <nuxt/>
     </section>
-    <Footer class="default--footer"/>
+    <Footer class="default__footer"/>
   </div>
 </template>
 
