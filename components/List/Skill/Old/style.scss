@@ -1,26 +1,22 @@
 .skill--old {
-  &--header {
+  &__header {
     margin: 10px;
   }
 
-  &--list {
-    @include flex-row;
-    border: solid 1px black;
+  &__list {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
 
-    &__item {
+    &__head {
+      margin-bottom: 20px;
+    }
 
-      &--header {
-        @include flex-center;
-        flex-direction: row;
-      }
-
-      &--list {
-        list-style-type: disc;
-        &__item {
-          
-        }
+    &__body {
+      &__item {
+        padding-right: 20px;
       }
     }
+
   }
 }

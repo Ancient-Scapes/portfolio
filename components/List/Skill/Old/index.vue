@@ -1,33 +1,26 @@
 <template>
   <div class="skill--old">
     <!-- 表ヘッダ -->
-    <div class="skill--old--header">
-      <span class="skill--old--header__title">
-        {{ listTitle }}
+    <div class="skill--old__header">
+      <span class="skill--old__header__title">
+        <marquee>{{ listTitle }}</marquee>
       </span>
     </div>
-    <ul class="skill--old--list">
-      <li 
-        v-for="(value, index) in data"
-        :key="index"
-        class="skill--old--list__item">
-        <div class="skill--old--list__item--header">
-          <span class="skill--old--list__item__title">
-            <h3>{{ value.name }}</h3>
-          </span>
-        </div>
-        <div v-if="value.item">
-          <ul class="skill--old--list__item--list">
-            <li
-              v-for="(value2, index2) in value.item"
-              :key="index2"
-              class="skill--old--list__item--list__item">
-              {{ value2 }}
-            </li>
-          </ul>
-        </div>
-      </li>
-    </ul>
+
+    <table
+      v-for="(value, index) in data"
+      :key="index"
+      class="skill--old__list">
+      <thead class="skill--old__list__head">
+        <th class="skill--old__list__head__item">{{ value.name }}</th>
+      </thead>
+      <tbody class="skill--old__list__body">
+        <td
+          v-for="(techName, index2) in value.item"
+          :key="index2"
+          class="skill--old__list__body__item">{{ techName }}</td>
+      </tbody>
+    </table>
   </div>
 </template>
 
