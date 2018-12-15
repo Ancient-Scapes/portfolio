@@ -1,6 +1,14 @@
 <template>
   <div :class="`image__wrapper image__wrapper${imageType}`">
+    <a
+      v-if="link" 
+      :href="link">
+      <img 
+        :src="src" 
+        :class="`image__main image__main${imageType}`">
+    </a>
     <img 
+      v-else
       :src="src" 
       :class="`image__main image__main${imageType}`">
   </div>
@@ -20,6 +28,10 @@ export default {
     isIcon: {
       type: Boolean,
       default: false
+    },
+    link: {
+      type: String,
+      default: null
     }
   },
   computed: {
