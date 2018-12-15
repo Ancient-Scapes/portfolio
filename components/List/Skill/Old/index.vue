@@ -57,7 +57,7 @@ export default {
         Object(arr),
         function(value) {
           const filename = this.getContentsName(value)
-          return `/img/profile/${imgDirName}/${filename}.png`
+          return `/img/skill/${imgDirName}/${filename}.png`
         }.bind(this)
       )
     },

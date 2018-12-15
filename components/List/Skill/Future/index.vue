@@ -20,7 +20,7 @@
             <span class="card__header__icon">
               <CommonImage 
                 v-if="!value.icon"
-                :src="`/img/profile/${imgDirName}/${getContentsName(value.name)}.png`"
+                :src="`/img/skill/${imgDirName}/${getContentsName(value.name)}.png`"
                 :is-icon="true"/>
             </span>
             <span class="card__header__title">
@@ -73,7 +73,7 @@ export default {
         Object(arr),
         function(value) {
           const filename = this.getContentsName(value)
-          return `/img/profile/${imgDirName}/${filename}.png`
+          return `/img/skill/${imgDirName}/${filename}.png`
         }.bind(this)
       )
     },
