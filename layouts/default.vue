@@ -2,7 +2,7 @@
   <div class="default">
     <Header class="default__header"/>
     <section class="default__main">
-      <nuxt/>
+      <nuxt class="default__main__contents"/>
     </section>
     <Footer class="default__footer"/>
   </div>
