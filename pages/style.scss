@@ -5,9 +5,7 @@ article {
 }
 
 .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 
   &__title {
 
